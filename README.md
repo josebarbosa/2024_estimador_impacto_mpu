@@ -5,13 +5,17 @@ Este projeto visa unificar os dados de servidores de todos os ramos do MPU (MPF,
 Para alcançar o objetivo pretendido, os dados de diferentes bases devem ser unificados, e criados algoritmos que tentem identificar exatamente a composição das remunerações e proventos dos servidores, uma vez que a granularidade disponibilizada pelas bases, via de regra, é insuficiente para precisar com clareza a situação funcional do servidor, em termos de, entre outros, posicionamento na carreira, gratificações recebidas, eventual margem de evolução, ou rubricas coincidentes. 
 ##Bases de dados utilizadas
 Para este estudo, são utilizadas as seguintes bases de dados:
+
 Para definição de estimativa de custos: 
 http://www.transparencia.mpf.mp.br/conteudo/gestao-de-pessoas/tabelas-portaria-sof-segep/2024/anexo_II_servidores_2024_pdf.pdf
 http://www.transparencia.mpf.mp.br/conteudo/gestao-de-pessoas/tabelas-portaria-sof-segep/2024/anexo_III_2024_pdf.pdf
+
 Remuneração de servidores ativos:
 http://www.transparencia.mpf.mp.br/conteudo/contracheque/remuneracao-servidores-ativos
+
 Proventos de inativos: 
 http://www.transparencia.mpf.mp.br/conteudo/contracheque/provento-servidores-inativos
+
 Valores recebidos de pensionistas:
 http://www.transparencia.mpf.mp.br/conteudo/contracheque/valores-percebidos-pensionistas
 Quadro de servidores ativos e inativos do MPF:
