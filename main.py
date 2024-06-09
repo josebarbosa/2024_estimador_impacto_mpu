@@ -11,6 +11,7 @@ df_mpu.info()
 
 # TODO - definir algumas regras de modelo (citar exemplos)
 # Exemplo: verificar qual o valor médio estimado para cálculo do impacto de AQ. É para considerar o valor total para todos ou existe um valor médio atual? Neste caso, qual seria o percentual aplicável
+#classificador deve tentar identificar a classe/padrão do servidor
 
 # TODO - definir as regras vigentes de remuneração atuais
 
