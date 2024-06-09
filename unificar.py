@@ -68,3 +68,6 @@ mpt.info()
 
 
 # TODO - transformar o dataframe num CSV a ser lido pelo arquivo principal
+mpu = pd.concat([mpdft, mpf, mpm, mpt])
+mpu.info()
+mpu.to_csv('anexos/mpu.csv')
