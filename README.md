@@ -1,12 +1,12 @@
 # 2024_estimador_impacto_mpu
 
-#Projeto de cálculo de impacto orçamentário de reajustes do MPU
+# Projeto de cálculo de impacto orçamentário de reajustes do MPU
 Este projeto visa unificar os dados de servidores de todos os ramos do MPU (MPF, MPT, MPM e MPDFT) e estimar impactos orçamentários decorrentes de eventuais planos de carreira. 
 
-##Modelo de algoritmo
+## Modelo de algoritmo
 Para alcançar o objetivo pretendido, os dados de diferentes bases devem ser unificados, e criados algoritmos que tentem identificar exatamente a composição das remunerações e proventos dos servidores, uma vez que a granularidade disponibilizada pelas bases, via de regra, é insuficiente para precisar com clareza a situação funcional do servidor, em termos de, entre outros, posicionamento na carreira, gratificações recebidas, eventual margem de evolução, ou rubricas coincidentes. 
 
-##Bases de dados utilizadas
+## Bases de dados utilizadas
 Para este estudo, são utilizadas as seguintes bases de dados:
 
 Para definição de estimativa de custos: 
@@ -59,7 +59,7 @@ Valores recebidos por pensionistas do MPDFT
 https://www.mpdft.mp.br/transparencia/index.php?item=remuneracao&tipo=pensionistas&resp=REMUNERACAO&titulo=Valores%20percebidos%20por%20todos%20os%20pensionistas
 
 
-##Peculiaridades
+## Peculiaridades
 
 Para servidores inativos e pensionistas, é preciso detectar se o regime é de paridade ou não. O impacto deve se restringir àquela opção, enquanto os benefícios decorrentes de média possuem metodologia própria de correção, baseada no INPC e aplicada anualmente em janeiro. 
 
