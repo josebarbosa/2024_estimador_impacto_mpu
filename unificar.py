@@ -50,6 +50,21 @@ mpt_ativo['situacao_funcional'] = 'ativo'
 mpt_inativo['situacao_funcional'] = 'inativo'
 mpt_pensionista['situacao_funcional'] = 'pensionista'
 
+#unificar dataframe por ramo
+print("Concatenando MPDFT")
+mpdft = pd.concat([mpdft_ativo, mpdft_inativo, mpdft_pensionistas])
+mpdft.info()
+print("Concatenando MPF")
+mpf = pd.concat([mpf_ativo, mpf_inativo, mpf_pensionista])
+mpf.info()
+print("Concatenando MPM")
+mpm = pd.concat([mpm_ativo, mpm_inativo, mpm_pensionista])
+mpm.info()
+print("Concatenando MPT")
+mpt = pd.concat([mpt_ativo, mpt_inativo, mpt_pensionista])
+mpt.info()
+
 # TODO - fazer tratamento dos dados
+
 
 # TODO - transformar o dataframe num CSV a ser lido pelo arquivo principal
