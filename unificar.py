@@ -13,9 +13,42 @@ import pandas as pd
 #pd.set_option('display.width', 1000)
 #pd.set_option('max_columns', None)
 
+
 # TODO - carregar tabelas de cada um dos ramos
 # São 3 tabelas de cada: remunerações, proventos e valores recebidos (respectivamente de servidores ativos, servidores inativos e pensionistas)
+#pd.read_excel("the_document.ods", engine="odf")
+print("Aguarde... carregando Dataframes")
+print("MPDFT")
+mpdft_pensionistas = pd.read_excel('anexos/mpdft_valores_pensionistas_marco_2024.ods', engine='odf')
+mpdft_ativo = pd.read_excel('anexos/mpdft_remuneracao_servidores_ativos_marco_2024.ods', engine='odf')
+mpdft_inativo = pd.read_excel('anexos/mpdft_proventos_servidores_inativos_marco_2024.ods', engine='odf') 
+print("MPF")
+mpf_ativo = pd.read_excel('anexos/remuneracao-servidores-ativos_2024_Marco.ods', engine='odf')
+mpf_inativo = pd.read_excel('anexos/provento-servidores-inativos_2024_Marco.ods', engine='odf')
+mpf_pensionista = pd.read_excel('anexos/valores-percebidos-pensionistas_2024_Marco.ods', engine='odf')
+print("MPM")
+mpm_ativo = pd.read_excel('anexos/mpm_remuneracao_servidores_ativos_marco_2024.ods', engine='odf')
+mpm_inativo = pd.read_excel('anexos/mpm_proventos_servidores_inativos_marco_2024.ods', engine='odf')
+mpm_pensionista = pd.read_excel('anexos/mpm_valores_pensionistas_marco_2024.ods', engine='odf')
+print("MPT")
+mpt_ativo = pd.read_excel('anexos/mpt_remuneracao_servidores_ativos_marco_2024.ods', engine='odf')
+mpt_inativo = pd.read_excel('anexos/mpt_proventos_servidores_inativos_marco_2024.ods', engine='odf')
+mpt_pensionista = pd.read_excel('anexos/mpt_valores_pensionistas_marco_2024.ods', engine='odf')
+print("Conclusão da carga de Dataframes")
 
+#apensar a coluna de situação funcional (ativo, inativo ou pensionista) a cada um dos dataframes
+mpdft_ativo['situacao_funcional'] = 'ativo'
+mpdft_inativo['situacao_funcional'] = 'inativo'
+mpdft_pensionistas['situacao_funcional'] = 'pensionista'
+mpf_ativo['situacao_funcional'] = 'ativo'
+mpf_inativo['situacao_funcional'] = 'inativo'
+mpf_pensionista['situacao_funcional'] = 'pensionista'
+mpm_ativo['situacao_funcional'] = 'ativo'
+mpm_inativo['situacao_funcional'] = 'inativo'
+mpm_pensionista['situacao_funcional'] = 'pensionista'
+mpt_ativo['situacao_funcional'] = 'ativo'
+mpt_inativo['situacao_funcional'] = 'inativo'
+mpt_pensionista['situacao_funcional'] = 'pensionista'
 
 # TODO - fazer tratamento dos dados
 
